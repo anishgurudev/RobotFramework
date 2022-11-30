@@ -30,7 +30,8 @@ Validate Cards Display in the Shopping page
     wait until element is visible on screen    ${ShopPage_Checkout_Btn}
     verify Card titles in the shop page
     #scroll till Element    xpath:(//*[@class='card-footer'])[4]/button
-    select the card    Nokia Edge
+    ${Phones} =    Create list    iphone X
+    select the card    ${Phones}
     scroll till Element    ${ShopPage_Checkout_Btn}
 
 Select the form and navigate to child window
@@ -71,10 +72,10 @@ select the card
         Log    ${cardElement.text}
         IF    '${cardElement.text}' in ${cardName}
             Click Button    xpath:(//*[@class='card-footer'])[${index}]/button
-            BREAK
         END
         ${index} =    Evaluate    ${index} +1
     END
+    Sleep    5
 
 Fill tthe login details and select the user option
     [Arguments]    ${username}    ${password}
