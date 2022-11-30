@@ -13,8 +13,9 @@ class Shop:
         )
 
     # method name will be converted to keyword name      Hello Test
+    @keyword
     def hello_test(self):
-        print("hello automater")
+        BuiltIn().log_to_console("hello automater")
 
     @keyword
     def add_item_to_cart_and_checkout(self, productList):

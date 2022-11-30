@@ -3,7 +3,7 @@ Documentation       to validate the login
 
 Library             SeleniumLibrary
 Library             Collections
-#Library    ../customLibraries/Shop.py
+Library             ../customLibraries/Shop1.py
 Resource            ../resource/resource.robot
 
 Test Setup          Launch the browser
@@ -18,11 +18,11 @@ ${loginPage_user_Radio_Btn}     css:input[value='user']
 
 
 *** Test Cases ***
-#Validate unSuccessful Login
-#    open the url
- #    Fill the login Form    ${user_name}    ${invalid_password}
- #    wait until element is visible on screen    ${ErrorMessage_Xpath}
- #    verify error message is correct
+Validate unSuccessful Login
+    open the url
+    Fill the login Form    ${user_name}    ${invalid_password}
+    wait until element is visible on screen    ${ErrorMessage_Xpath}
+    verify error message is correct
 
 Validate Cards Display in the Shopping page
     open the url
@@ -31,7 +31,7 @@ Validate Cards Display in the Shopping page
     verify Card titles in the shop page
     #scroll till Element    xpath:(//*[@class='card-footer'])[4]/button
     select the card    Nokia Edge
-    # Hello Test
+    Hello Test
     scroll till Element    ${ShopPage_Checkout_Btn}
 
 Select the form and navigate to child window
