@@ -3,7 +3,7 @@ Documentation       to validate the login
 
 Library             SeleniumLibrary
 Library             Collections
-#Library    ../customLibraries/Shop.py
+Library    ../customLibraries/Shop.py
 Resource            ../resource/resource.robot
 
 Test Setup          Launch the browser
@@ -31,7 +31,7 @@ Validate Cards Display in the Shopping page
     verify Card titles in the shop page
     #scroll till Element    xpath:(//*[@class='card-footer'])[4]/button
     select the card    Nokia Edge
-    # Hello Test
+    Hello Test
     scroll till Element    ${ShopPage_Checkout_Btn}
 
 Select the form and navigate to child window

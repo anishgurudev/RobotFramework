@@ -9,7 +9,7 @@ Test Template  Validate unSuccessful Login
 
 
 *** Variables ***
-${Chromedriver_Path}        C:/Users/Arpita Malakar/Documents/chromedriver
+${Chromedriver_Path}        chromedriver
 ${Browser}                  Chrome
 ${Base_url}                 https://rahulshettyacademy.com/loginpagePractise/
 ${ErrorMessage_Xpath}       css:.alert-danger

@@ -6,7 +6,7 @@ Library     OperatingSystem
 
 *** Variables ***
 ${Browser}              Chrome
-${Chromedriver_Path}    C:/Users/Arpita Malakar/Documents/chromedriver
+${Chromedriver_Path}        chromedriver
 
 ${Base_url}             https://rahulshettyacademy.com/loginpagePractise/
 
