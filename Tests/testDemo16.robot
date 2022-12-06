@@ -4,7 +4,7 @@ Documentation       to validate the login
 Library             SeleniumLibrary
 Library             Collections
 Library             ../customLibraries/Shop.py
-Resource            resource.robot
+Resource            ../resource/resource.robot
 
 Test Setup          Launch the browser
 Test Teardown       Close Browser Session
